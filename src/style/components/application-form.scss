@@ -1,0 +1,44 @@
+.application-form {
+  padding: 20px;
+  background: #fff;
+  height: 100%;
+  color: #000;
+  border-radius: 5px;
+
+  &__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: $fz2;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: $fz1;
+  }
+
+  &__input {
+    font-size: $fz1;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__submit {
+    margin-top: 30px;
+    align-self: center;
+    padding: 10px 20px;
+    font-size: $fz1;
+    border: 2px solid $main_orange;
+    border-radius: 5px;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+}

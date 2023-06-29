@@ -1,11 +1,30 @@
 body {
-  background-color: $back;
-  user-select: none;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-weight: light;
+  .lock {
+    overflow: hidden;
+    touch-action: none;
+  }
 }
 
-h1 {
-  font-weight: inherit;
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  > main {
+    flex: 1 1 auto;
+  }
+  > * {
+    min-width: 0;
+  }
+}
+
+.wide-container {
+  max-width: 1660px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.slim-container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
